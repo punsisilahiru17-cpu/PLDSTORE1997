@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PLD Store | Music Accessories</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><a class="logo" href="#">PLD<span>STORE</span></a><nav><a href="#home">Home</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></nav><button class="cart" onclick="toggleCart()">Cart <b id="count">0</b></button></header>
+<main>
+<section class="hero" id="home"><div class="hero-copy"><p class="eyebrow">YOUR MUSIC. YOUR GEAR.</p><h1>Make every<br><em>note count.</em></h1><p>Discover practical music accessories for guitarists, bassists and musicians.</p><a class="primary" href="#products">Shop products</a></div><div class="hero-art"><div class="orb"></div><div class="hero-label">PLD<br>STORE</div></div></section>
+<section class="intro" id="about"><p class="eyebrow">WELCOME TO PLD STORE</p><h2>Gear for your next sound.</h2><p>Explore our selected music accessories. Add your favourites to the cart and send your order directly through WhatsApp.</p></section>
+<section id="products"><div class="section-head"><div><p class="eyebrow">THE COLLECTION</p><h2>Featured products</h2></div><span>04 PRODUCTS</span></div><div class="grid">
+      <article class="card">
+        <div class="photo"><img src="assets/product-1-clean.jpg" alt="Mini 2-in-1 Guitar Wah & Volume Pedal"></div>
+        <div class="card-body">
+          <span class="tag">MUSIC ACCESSORIES</span>
+          <h3>Mini 2-in-1 Guitar Wah & Volume Pedal</h3><p>A compact 2-in-1 active volume and wah pedal with classic wah sound, clear volume control and a lightweight design. Power adapter not included.</p>
+          <div class="buyrow"><strong>LKR 5,844</strong>
+          <button onclick="addToCart(0)">Add to cart</button></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="assets/product-2-clean.jpg" alt="Rainbow Colour Acoustic Guitar Strings"></div>
+        <div class="card-body">
+          <span class="tag">MUSIC ACCESSORIES</span>
+          <h3>Rainbow Colour Acoustic Guitar Strings</h3><p>A colourful six-string acoustic guitar set designed to help beginners identify strings while practising. Durable coated copper-alloy construction.</p>
+          <div class="buyrow"><strong>LKR 500</strong>
+          <button onclick="addToCart(1)">Add to cart</button></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="assets/product-3-clean.jpg" alt="Four-Colour Electric Bass Strings"></div>
+        <div class="card-body">
+          <span class="tag">MUSIC ACCESSORIES</span>
+          <h3>Four-Colour Electric Bass Strings</h3><p>A four-string electric bass set made from steel and nickel alloy, with a smooth, anti-rust finish and a lightweight portable design.</p>
+          <div class="buyrow"><strong>LKR 1,021</strong>
+          <button onclick="addToCart(2)">Add to cart</button></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="assets/product-4-clean.jpg" alt="Coated Acoustic / Electric Guitar Strings"></div>
+        <div class="card-body">
+          <span class="tag">MUSIC ACCESSORIES</span>
+          <h3>Coated Acoustic / Electric Guitar Strings</h3><p>Coated guitar strings with 80/20 bronze and nickel options, multiple gauge choices and a longer-lasting feel. Budget-friendly alternative; not presented as an authentic branded product.</p>
+          <div class="buyrow"><strong>LKR 3,800</strong>
+          <button onclick="addToCart(3)">Add to cart</button></div>
+        </div>
+      </article></div></section>
+<section class="contact" id="contact"><p class="eyebrow">NEED HELP?</p><h2>Let's get your order started.</h2><p>Questions about a product? Contact us directly on WhatsApp.</p><a class="primary" href="https://wa.me/94767049970" target="_blank">Chat on WhatsApp</a></section>
+</main><footer><a class="logo" href="#">PLD<span>STORE</span></a><p>Music accessories, made easy.</p><small>© 2026 PLD Store</small></footer>
+<aside id="cartPanel" class="cart-panel"><button class="close" onclick="toggleCart()">×</button><h2>Your cart</h2><div id="cartItems">Your cart is empty.</div><button class="checkout" onclick="checkout()">Order via WhatsApp</button></aside>
+<div id="shade" onclick="toggleCart()"></div><script src="app.js"></script></body></html>
